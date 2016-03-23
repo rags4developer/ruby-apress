@@ -1,0 +1,23 @@
+Required Basic Features for Text Analyzer
+
+Your text analyzer will provide the following basic statistics:
+
+• Character count
+
+• Character count (excluding spaces)
+
+• Line count
+
+• Word count
+
+• Sentence count
+
+• Paragraph count
+
+• Average number of words per sentence
+
+• Average number of sentences per paragraph
+
+In the last two cases, the statistics are easily calculated from each other. That is, once you 
+have the total number of words and the total number of sentences, it becomes a matter of a 
+simple division to work out the average number of words per sentence.
