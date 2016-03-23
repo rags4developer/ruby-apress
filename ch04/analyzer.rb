@@ -1,5 +1,10 @@
-#Step 1 - Load the file line by line. Count the lines.
-line_count = 0;
-File.open("text.txt").each {|line| line_count += 1}
-puts line_count
+
+#Read the file line by line.
+lines = File.readlines("text.txt") # An array of lines.
+
+#Req 3 - Line count
+line_count = lines.size;
+text = lines.join
+
+puts "#{line_count} lines"
 
