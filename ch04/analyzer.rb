@@ -31,4 +31,6 @@ puts "#{sentence_count} sentences"
 paragraph_count = text.split(/\n\n/).length
 puts "#{paragraph_count} paragraphs"
 
+# Req 7 - Average number of words per sentence
+puts "#{word_count/sentence_count} words per sentence (average)"
 
