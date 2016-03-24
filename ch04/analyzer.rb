@@ -23,6 +23,12 @@ puts "#{word_count} words"
 
 #Req 5 - Sentence count
 # A sentence generally ends with . ? or !
-sentence_count = text.split(/\.|\?|!/)
-puts "#{sentence_count.length} sentences"
+sentence_count = text.split(/\.|\?|!/).length
+puts "#{sentence_count} sentences"
+
+#Req 6 - Paragraph count
+# Generally, a paragraph ends with two newline characters.
+paragraph_count = text.split(/\n\n/).length
+puts "#{paragraph_count} paragraphs"
+
 
