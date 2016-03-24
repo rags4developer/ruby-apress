@@ -21,3 +21,8 @@ puts "#{total_characters_nospaces} characters(excluding spaces)"
 word_count = text.split.length # By default, split will split on space char. So, no need to specify
 puts "#{word_count} words"
 
+#Req 5 - Sentence count
+# A sentence generally ends with . ? or !
+sentence_count = text.split(/\.|\?|!/)
+puts "#{sentence_count.length} sentences"
+
