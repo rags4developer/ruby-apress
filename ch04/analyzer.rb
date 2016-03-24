@@ -34,3 +34,7 @@ puts "#{paragraph_count} paragraphs"
 # Req 7 - Average number of words per sentence
 puts "#{word_count/sentence_count} words per sentence (average)"
 
+# Req 8 - Average number of sentences per paragraph
+puts "#{sentence_count/paragraph_count} sentences per paragraph (average)"
+
+
