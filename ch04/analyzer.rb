@@ -11,3 +11,6 @@ puts "#{line_count} lines"
 #Req 1 - Character count
 total_characters = text.length
 puts "#{total_characters} characters"
+
+#Req 2 - Character count (excluding spaces)
+total_characters_nospaces = text.gsub(/\s+/, '').length #remove all series of 1 or more spaces in text.
