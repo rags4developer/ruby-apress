@@ -8,3 +8,6 @@ text = lines.join
 
 puts "#{line_count} lines"
 
+#Req 1 - Character count
+total_characters = text.length
+puts "#{total_characters} characters"
