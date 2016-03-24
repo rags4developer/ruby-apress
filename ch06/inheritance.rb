@@ -15,6 +15,7 @@ class Doctor < Person
 		super(name) # Calling parent constructor.
 	end
 	
+	# Overriding the parent class method name.
 	def name
 		return "Doctor " + super # Calling parent method.
  	end
