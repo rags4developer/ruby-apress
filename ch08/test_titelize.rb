@@ -11,8 +11,8 @@ word in a string. Lets develop this code with the TDD method, using Test::Unit.
 
 class String
 	def titelize
-		#\b gets word using word boundaries (.- etc.). \w gets the first alphabet in the word got by \b
-		self.gsub(/\b\w/) {|letter| letter.upcase}
+		#\s gets word by detecting spaces. \w gets the first alphabet in the word supplied by \s
+		self.gsub(/\s\w/) {|letter| letter.upcase}
 	end
 end
 
