@@ -21,7 +21,7 @@ require 'test/unit'
 
 class TestTitelize < Test::Unit::TestCase
 	def test_basic
-		assert_equal("This is a test", "this is a test".titelize)
+		assert_equal("This Is A Test", "this is a test".titelize)
 		assert_equal("Another Test 1234", "another test 1234".titelize)
 		assert_equal("We're Testing", "We're testing".titelize)
 	end
