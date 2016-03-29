@@ -5,14 +5,13 @@ Ruby allows us to add a method to existing Ruby classes or even redefine existin
 We want to add a method "titelize" to String class which will capitalize the first alphbet of each
 word in a string. Lets develop this code with the TDD method, using Test::Unit. 
 
-
-
 =end
 
 class String
 	def titelize
-		#\s gets word by detecting spaces. \w gets the first alphabet in the word supplied by \s
-		self.gsub(/\s\w/) {|letter| letter.upcase}
+		# (\A|\s) lets us pick the first word of a string OR| words separated by spaces. Then,
+		# \w gets the first letter of the fetched word.
+		self.gsub(/(\A|\s)\w/) {|letter| letter.upcase}
 	end
 end
 
